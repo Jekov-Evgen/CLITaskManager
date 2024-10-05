@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <string>
+#include "workingWithTasks.h"
 
 int main()
 {
@@ -33,13 +34,13 @@ int main()
         std::cin >> command;
 
         if (command == "add") {
-            std::cout << "Добавляем задачу" << std::endl;
+            addingTask();
         }
         else if (command == "del") {
-            std::cout << "Удаляем" << std::endl;
+            delTask();
         }
         else if (command == "look") {
-            std::cout << "Выводим списко задач" << std::endl;
+            lookTask();
         }
         else if (command == "edit") {
             std::cout << "Редоктируем задачу" << std::endl;
